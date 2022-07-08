@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card card-body">
+                    <h1 class="heading">Loan Calculator </h1>
+                    <form id="loan-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">%</span>
+                                <input type="number" class="form-control" id="interest" placeholder="Interest">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control form1" id="years" placeholder="Years To Repay">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Calculate" class="btn">
+                        </div>
+                    </form>
+                    <!-- LOADER HERE -->
+                    <div id="loading" class="load">
+                        <img src="img/loading-unscreen (1).gif" alt="" class="load">
+                    </div>
+                    <!-- RESULTS -->
+                    <div id="results">
+                        <h5>Results</h5>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">Monthly Payment</span>
+                                <input type="number" class="form-control form2" id="monthly-payment" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">Total Payment</span>
+                                <input type="number" class="form-control form3" id="total-payment" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">Total Interest</span>
+                                <input type="number" class="form-control form4" id="total-interest" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
